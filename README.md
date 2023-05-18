@@ -20,3 +20,6 @@ The Frontend Developer Career Path aims to teach you everything you need to beco
 
 Happy Coding!
 # scoreboard
+# scoreboard
+# scoreboard
+# scoreboard

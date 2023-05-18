@@ -1,0 +1,167 @@
+@font-face {
+    font-family: "Cursed Timer";
+    src: url(fonts/cursedtimer.ttf);
+}
+
+@keyframes flash-click {
+    0% {background-color: #00ffff;}
+    25% {background-color: #ffff00;}
+    50% {background-color: #0080ff;}
+    75% {background-color: #ff00ff;}
+    100% {background-color: #F94F6D;}
+    12.5%, 37.5%, 62.5%, 87.5% {background-color: #ff0000;}
+}
+
+/* Global styles */
+
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #1B244A;
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+/* Primary content */
+
+.container {
+    height: 100vh;
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    position: relative;
+}
+
+.column {
+    height: 30em;
+    width: 50em;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    position: relative;
+}
+
+.col-home {
+    margin-left: 60em;
+    margin-right: 30em;
+}
+
+.col-guest {
+    margin-right: 60em;
+    margin-left: 30em;
+}
+
+h3 {
+    font-size: 12rem;
+    font-family: Verdana, sans-serif; 
+    color: #eee;
+    margin-bottom: .25em;
+    margin-top: 0;
+}
+
+/* Home and Guest scoreboard. This styles how the actual scores are displayed. */
+
+#home-score,
+#guest-score  {
+    color: #F94F6D;
+    background: #080001;
+    height: 100%;
+    width: 100%;
+    font-size: 19.5rem; 
+    text-align: center;
+    padding: .1em .45em;
+    font-family: "Cursed Timer";
+    border-radius: 10px;
+    margin-bottom: .25em;
+    border: 2px solid #9AABD8;
+}
+
+/* Buttons section */
+
+.score-btn-home,
+.score-btn-guest {
+    width: 46em;
+    height: 15.3em;
+    display: flex; 
+    justify-content: space-between
+}
+
+.score-button {
+    font-family: "Cursed Timer";
+    font-size: 3rem;
+    padding: .7em;
+    background-color: #1B244A;
+    color: #9aabd8;
+    border: 2px solid #9AABD8;
+    border-radius: 10px;
+    position: relative;
+    animation: flash-click .75s;
+    outline: none;
+}
+
+.score-button:focus,
+.score-button:hover {
+    border-color: #fff;
+    outline: none;
+}
+
+/* Game Timer */
+
+.timer-container {
+    position: absolute;  
+    margin-top: 6.5em; 
+}
+
+#game-timer {
+    height: .9em;
+    width: 3.7em;
+    font-size: 5em;
+    font-family: "Cursed Timer", sans-serif;
+    background-color: #080001;
+    color: #F94F6D; 
+    border-radius: 5px;
+    text-align: center; 
+    padding: 10px 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 2px solid #9AABD8;
+}
+
+#start,
+#reset {
+    font-size: 3rem;
+    font-family: Verdana, sans-serif; 
+    width: 4em;
+    padding: 4px 0;
+    color: #fff;
+    background-color: #F94F6D;
+    border-radius: 5px;
+    border: 2px solid #9AABD8;
+    margin-top: 0;
+    outline: none;
+}
+
+#start:focus,
+#start:hover,
+#reset:focus,
+#reset:hover{
+    border-color: #fff;
+}
+
+/* First Place Banner */
+
+.home-place,
+.guest-place {
+    width: 4.5em;
+    color: #F94F6D; 
+    font-size: 3em;
+    position: absolute;
+    right: 95%;
+    bottom: 70%;
+}
+
+
+

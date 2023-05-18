@@ -1,0 +1,47 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <section class="container">
+            <!-- Home Column -->
+            <div class="column col-home">
+                <h3>HOME</h3>
+                <p class="home-place"></p>
+                <div id="home-score">0</div>
+                
+                <div class="score-btn-home" id="home-buttons">
+                    <button id="one-point-home" class="score-button">+1</button>
+                    <button id="two-point-home" class="score-button">+2</button>
+                    <button id="three-point-home" class="score-button">+3</button>
+                </div>
+                
+            </div>
+            
+            <!-- Game Timer -->
+            <section class="timer-container">
+                <button id="start">Start</button>
+                <p id="game-timer">00:00</p>
+                <button id="reset">Reset</button>
+            </section>
+              
+            <!-- Home Column -->
+            
+            <div class="column col-guest">
+                <h3>GUEST</h3>
+                <p class="guest-place"></p>
+                <div id="guest-score">0</div>
+                
+                <div class="score-btn-guest">
+                    <button id="one-point-guest" class="score-button">+1</button>
+                    <button id="two-point-guest" class="score-button">+2</button>
+                    <button id="three-point-guest" class="score-button">+3</button>
+                </div>
+                
+            </div>
+        </section>
+        
+        <script src="index.js"></script>
+        
+    </body>
+</html>
